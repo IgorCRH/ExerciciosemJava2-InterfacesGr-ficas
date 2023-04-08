@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Veiculos
+comment1.params=
+comment1.target=java.lang.String\ getNome()
+comment2.params=
+comment2.target=int\ getCodigo()
+comment3.params=
+comment3.target=double\ getPreco()
+numComments=4

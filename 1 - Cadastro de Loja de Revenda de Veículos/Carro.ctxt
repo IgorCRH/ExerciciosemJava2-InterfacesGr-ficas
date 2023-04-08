@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Carro
+comment1.params=
+comment1.target=Carro()
+comment2.params=nome\ codigo\ preco\ km2
+comment2.target=Carro(java.lang.String,\ int,\ double,\ double)
+comment3.params=
+comment3.target=java.lang.String\ getClasse()
+comment4.params=
+comment4.target=java.lang.String\ getInfo()
+comment5.params=km2
+comment5.target=void\ setKm(double)
+numComments=6

@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=CVeiculos
+comment1.params=nome2\ codigo2\ preco2
+comment1.target=CVeiculos(java.lang.String,\ int,\ double)
+comment10.params=
+comment10.target=java.lang.String\ getInfo()
+comment11.params=
+comment11.target=void\ printDados()
+comment2.params=nome2
+comment2.target=void\ setNome(java.lang.String)
+comment3.params=codigo2
+comment3.target=void\ setCodigo(int)
+comment4.params=preco2
+comment4.target=void\ setPreco(double)
+comment5.params=
+comment5.target=java.lang.String\ getNome()
+comment6.params=
+comment6.target=int\ getCodigo()
+comment7.params=
+comment7.target=double\ getPreco()
+comment8.params=
+comment8.target=CVeiculos()
+comment9.params=
+comment9.target=java.lang.String\ getClasse()
+numComments=12
