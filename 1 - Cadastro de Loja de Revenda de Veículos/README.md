@@ -24,4 +24,4 @@ valor será reajustado em 10%. Se um carro tiver um valor no campo
 km um valor maior que 100000, então, seu valor será reduzido em
 8%. Por fim, um novo cálculo acerca do total de preços é realizada e
 impressa.
-----------------------------------------------------------------------------
+
