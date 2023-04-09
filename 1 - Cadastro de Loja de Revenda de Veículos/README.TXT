@@ -5,7 +5,7 @@ Enunciado (UNESP):
 simular a operação de
 um cadastro de veículos de uma revenda. Existem dois tipos de
 veículos: Carro, e Moto. 
-
+![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgg8mPIX64EuCUioNnMX0uHqdjGUD0eKFnzqsJt5xV-fvb0bqp5Hmnqh79rwFa6pBdiHCAMco7blX-M3HBzeOT262nM-NK1HjOvQ2QARdZYyXrEYUsMYjS4UCnq_YU7p8WjZ2_ohbz2zp1Iwp1QPWIF5AKkxV4O0erGGF_8uBjUe8ooQfGUDuhPaukw/s668/poli2.png)
 Interface Veiculos - string modelo e double preço
 Classe CVeiculos (implementa Veiculos) - métodos getpreco() e printdados()
 Classe Moto - Construtor da Classe Moto, double getpreco(), void setAno ()
