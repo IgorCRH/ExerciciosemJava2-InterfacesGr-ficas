@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>C:\Users\lar\Desktop\UFRRJMaterias\Transparencias e Listas\LP3 e Java\Exercícios Extracurso - Férias\18 - Contas de Banco Interfaces Gráficas\contbanco\contasbanco.jar</jar>
+  <outfile>C:\Users\lar\Desktop\UFRRJMaterias\Transparencias e Listas\LP3 e Java\Exercícios Extracurso - Férias\18 - Contas de Banco Interfaces Gráficas\contbanco\contasbanco.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl></downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon>C:\Users\lar\Desktop\UFRRJMaterias\Transparencias e Listas\LP3 e Java\Exercícios Extracurso - Férias\18 - Contas de Banco Interfaces Gráficas\contbanco\icone.ico</icon>
+  <jre>
+    <path>C:\Program Files\Java\jre1.8.0_361\bin</path>
+    <requiresJdk>false</requiresJdk>
+    <requires64Bit>false</requires64Bit>
+    <minVersion></minVersion>
+    <maxVersion></maxVersion>
+  </jre>
+</launch4jConfig>
