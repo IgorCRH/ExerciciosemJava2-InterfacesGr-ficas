@@ -1,5 +1,5 @@
 ﻿----------------------------------------------------------------------------
-Programa em Java que administra uma folha de pagamento.
+Programa em Java que administra uma folha de pagamento, nesta versão, escreve e guarda os funcionários em um arquivo texto, aonde ele também o lê e os lista no programa em questão.
 
 Enunciado:
 Simular a operação da
