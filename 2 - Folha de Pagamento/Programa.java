@@ -1,6 +1,10 @@
 import javax.swing.JOptionPane;  // Importa a classe Swing para construir a interface gráfica
 import java.util.ArrayList;
 import javax.swing.ImageIcon;
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartPanel;
+import org.jfree.chart.JFreeChart;
+import org.jfree.data.general.DefaultPieDataset;
 
 public class Programa {
 public static void main(String[] args) {
@@ -8,7 +12,7 @@ ArrayList<CEmployee> funcionarios = new ArrayList<CEmployee>(); // Vetor que vai
 double totalfolha = 0;
 ImageIcon icone = new ImageIcon("img.png");
 while (true) {
-Object[] options = {"Cadastrar Funcionário", "Ver Funcionários Registrados", "Sair"}; // Vetor de construir a interface do Menu Principal
+Object[] options = {"Cadastrar Funcionário", "Ver Funcionários Registrados", "Ver Gráfico de Funcionários", "Sair"}; // Vetor de construir a interface do Menu Principal
 
 int n = JOptionPane.showOptionDialog(null, // Abre a Janela e lista as opções
                     "O que deseja fazer?",
@@ -17,7 +21,7 @@ int n = JOptionPane.showOptionDialog(null, // Abre a Janela e lista as opções
                     JOptionPane.QUESTION_MESSAGE, // Segunda Opção - Lista Funcionários. Como será apenas listar, será uma QUESTION_MESSAGE
                     icone, // Aonde fica a imagem exibida no menu
                     options, // Posições das Opções no vetor options
-                    options[2]);
+                    options[3]);
 
 if (n == 0) { // Constrói a primeira opção
                 String[] tipos = {"Assalariado", "Por Horas"}; // Tela de escolha do tipo de funcionário
@@ -61,6 +65,27 @@ if (n == 0) { // Constrói a primeira opção
                     }
 
                     JOptionPane.showMessageDialog(null, listaFuncionarios + "Total da folha de pagamento: " + totalfolha);
+                }
+} else if (n == 2) { // Constrói a segunda opção, listar os funcionários
+                if (funcionarios.isEmpty()) { // Caso nenhum funcionário estiver cadastrado
+                    JOptionPane.showMessageDialog(null, "Nenhum funcionário registrado");
+} else {
+                DefaultPieDataset dataset = new DefaultPieDataset(); // Objeto para a setagem das informações
+                int numAssalariados = 0; // Inicializa as variáveis em 0 para o incremento
+                int numPorHora = 0;
+for (CEmployee funcionario : funcionarios) { // Percorre o vetor para exibir a quantidade de funcionários de cada classe no gráfico
+    if (funcionario instanceof Salaried) {
+        numAssalariados++;
+    } else if (funcionario instanceof Hourly) {
+        numPorHora++;
+    }
+}
+                dataset.setValue("Assalariados", numAssalariados); // Determina os valores dos quais serão exibidos os campos no gráfico
+                dataset.setValue("Por hora", numPorHora);
+// Cria o gráfico
+JFreeChart chart = ChartFactory.createPieChart("Funcionários", dataset, true, true, false);
+ChartPanel chartPanel = new ChartPanel(chart);
+JOptionPane.showMessageDialog(null, chartPanel, "Gráfico", JOptionPane.PLAIN_MESSAGE);
                 }
             } else { // A terceira opção, sair do programa
                 break;
