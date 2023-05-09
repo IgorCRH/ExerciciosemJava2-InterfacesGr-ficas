@@ -1,5 +1,7 @@
 ﻿----------------------------------------------------------------------------
 Programa em Java que administra uma folha de pagamento.
+Atualização 09/05/2023 - Programa agora conta com opção no menu para exibir gráfico sobre os tipos de funcionários, com o uso da biblioteca [JFree](https://github.com/jfree/jfreechart/releases/tag/v1.5.2).
+O arquivo org.rar contém a bibilioteca já pronta para ser incluida ao projeto, bastando extrair o conteúdo do mesmo na mesma pasta do jar do projeto, caso queira explorar o conteúdo em sua máquina.
 
 Enunciado:
 Simular a operação da
